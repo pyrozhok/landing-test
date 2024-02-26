@@ -3,10 +3,11 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
+import Button from 'components/shared/button';
 import Burger from 'components/shared/header/burger';
 import Link from 'components/shared/link';
 import MobileMenu from 'components/shared/mobile-menu';
-import GitHubIcon from 'svgs/github.inline.svg';
+import MENUS from 'constants/menu';
 import logo from 'svgs/logo.svg';
 
 const Header = () => {
@@ -32,22 +33,27 @@ const Header = () => {
           aria-label="Global"
         >
           <Link href="/">
-            <Image src={logo} width={90} height={18} alt="NextJS logo" priority />
+            <Image src={logo} width={173} height={48} alt="DevOptima logo" priority />
           </Link>
-          <div className="flex gap-x-5 md:hidden">
-            <Link className="text-base font-semibold" href="/about">
-              About
-            </Link>
-            <span>|</span>
-            <Link
-              className="transition-opacity duration-200 hover:opacity-75"
-              href="https://github.com/pixel-point/nextjs-tailwind-starter"
-              target="__blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon className="h-6" />
-            </Link>
-          </div>
+          <ul
+            className="absolute left-1/2 flex min-w-[343px] translate-x-[-50%] items-center
+           justify-between space-x-12 md:hidden"
+          >
+            {MENUS.header.map(({ to, text }, index) => (
+              <li key={index} className="inline-block text-[0]">
+                <Link
+                  className="inline-block text-center text-base before:invisible before:block before:h-0 before:overflow-hidden before:font-medium before:content-[attr(title)]"
+                  href={to}
+                  theme="default"
+                  size="md"
+                  title={text}
+                >
+                  {text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Button className="flex md:hidden">Get started</Button>
           <Burger
             className="hidden md:block"
             isToggled={isMobileMenuOpen}

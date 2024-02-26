@@ -1,0 +1,15 @@
+export default {
+  home: '/',
+  about: '/about',
+  services: '/services',
+  whyDevOptima: '/why-dev-optima',
+  docs: '/docs',
+  releaseNotes: '/release-notes',
+  security: '/security',
+  privacy: '/privacy',
+  termsOfService: '/terms-of-service',
+  twitter: 'https://x.com/',
+  linkedIn: 'https://linkedin.com/',
+  gitHub: 'https://github.com/',
+  discourse: 'https://discourse.org/',
+};
