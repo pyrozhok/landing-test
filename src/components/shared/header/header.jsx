@@ -28,19 +28,16 @@ const Header = () => {
   return (
     <>
       <header className="absolute left-0 right-0 top-0 z-50 h-20 bg-transparent px-safe pt-safe">
-        <nav
-          className="container flex h-full items-center justify-between py-4"
-          aria-label="Global"
-        >
+        <nav className="container flex h-full items-center justify-between" aria-label="Global">
           <Link href="/">
             <Image src={logo} width={173} height={48} alt="DevOptima logo" priority />
           </Link>
           <ul
-            className="absolute left-1/2 flex min-w-[343px] translate-x-[-50%] items-center
-           justify-between space-x-12 md:hidden"
+            className="absolute left-1/2 flex translate-x-[-50%] items-center
+           justify-between gap-12 md:hidden"
           >
             {MENUS.header.map(({ to, text }, index) => (
-              <li key={index} className="inline-block text-[0]">
+              <li key={index} className="inline-block">
                 <Link href={to} theme="default" size="md" title={text}>
                   {text}
                 </Link>
