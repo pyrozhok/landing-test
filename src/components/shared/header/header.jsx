@@ -47,7 +47,9 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Button className="flex md:hidden">Get started</Button>
+          <Button theme="primary-blue-outline" size="md" className="flex md:hidden">
+            Get started
+          </Button>
           <Burger
             className="hidden md:block"
             isToggled={isMobileMenuOpen}

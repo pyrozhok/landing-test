@@ -35,6 +35,15 @@ module.exports = {
         400: '#172136',
       },
     }),
+    extend: {
+      borderRadius: {
+        large: '40px',
+      },
+      letterSpacing: {
+        'tight-8': '-0.02em',
+        'tight-4': '-0.01em',
+      },
+    },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
       xl: { max: '1439px' },

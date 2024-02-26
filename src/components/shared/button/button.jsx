@@ -11,13 +11,14 @@ const styles = {
     md: 'h-12',
     sm: 'h-11',
   },
-  // FIXME: Add themes. Better to name the theme using this pattern: "${color-name}-${theme-type}", e.g. "black-filled"
-  //       If there is no dividing between theme types, then feel free to use just color names, e.g. "black"
-  //       Check out an example by a link above for better understanding
-  theme: {},
+  theme: {
+    'primary-blue-outline':
+      'bg-primary-blue/20 border border-primary-blue tracking-tight-8 hover:bg-primary-blue/50',
+    'primary-blue-filled': 'bg-primary-blue border border-transparent hover:bg-secondary-blue',
+  },
 };
 
-const Button = ({ className, to, size, theme, children, ...otherProps }) => {
+const Button = ({ className = null, to = null, size, theme, children, ...otherProps }) => {
   const Tag = to ? Link : 'button';
 
   return (
@@ -37,11 +38,6 @@ Button.propTypes = {
   size: PropTypes.oneOf(Object.keys(styles.size)).isRequired,
   theme: PropTypes.oneOf(Object.keys(styles.theme)).isRequired,
   children: PropTypes.node.isRequired,
-};
-
-Button.defaultProps = {
-  className: null,
-  to: null,
 };
 
 export default Button;
