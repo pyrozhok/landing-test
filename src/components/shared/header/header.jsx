@@ -35,7 +35,7 @@ const Header = () => {
           </Link>
           <ul className="absolute left-1/2 flex -translate-x-1/2 items-center gap-12 md:hidden">
             {MENUS.header.map(({ to, text }, index) => (
-              <li key={index} className="inline-block">
+              <li className="inline-block" key={index}>
                 <Link href={to} theme="default" size="md" title={text}>
                   {text}
                 </Link>
@@ -43,7 +43,7 @@ const Header = () => {
             ))}
           </ul>
           <Link href="/">
-            <Button theme="primary-blue-outline" size="md" className="flex md:hidden">
+            <Button className="flex md:hidden" theme="primary-blue-outline" size="md">
               Get started
             </Button>
           </Link>
