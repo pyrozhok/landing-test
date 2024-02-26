@@ -30,12 +30,10 @@ const Header = () => {
       <header className="absolute left-0 right-0 top-0 z-50 h-20 bg-transparent px-safe pt-safe">
         <nav className="container flex h-full items-center justify-between" aria-label="Global">
           <Link href="/">
+            <span className="sr-only">DevOptima</span>
             <Image src={logo} width={173} height={48} alt="DevOptima logo" priority />
           </Link>
-          <ul
-            className="absolute left-1/2 flex translate-x-[-50%] items-center
-           justify-between gap-12 md:hidden"
-          >
+          <ul className="absolute left-1/2 flex -translate-x-1/2 items-center gap-12 md:hidden">
             {MENUS.header.map(({ to, text }, index) => (
               <li key={index} className="inline-block">
                 <Link href={to} theme="default" size="md" title={text}>
@@ -44,9 +42,11 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Button theme="primary-blue-outline" size="md" className="flex md:hidden">
-            Get started
-          </Button>
+          <Link href="/">
+            <Button theme="primary-blue-outline" size="md" className="flex md:hidden">
+              Get started
+            </Button>
+          </Link>
           <Burger
             className="hidden md:block"
             isToggled={isMobileMenuOpen}
