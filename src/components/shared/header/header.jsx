@@ -41,13 +41,7 @@ const Header = () => {
           >
             {MENUS.header.map(({ to, text }, index) => (
               <li key={index} className="inline-block text-[0]">
-                <Link
-                  className="inline-block text-center text-base before:invisible before:block before:h-0 before:overflow-hidden before:font-medium before:content-[attr(title)]"
-                  href={to}
-                  theme="default"
-                  size="md"
-                  title={text}
-                >
+                <Link href={to} theme="default" size="md" title={text}>
                   {text}
                 </Link>
               </li>
