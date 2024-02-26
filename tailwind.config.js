@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -6,10 +6,18 @@ module.exports = {
     container: false,
   },
   theme: {
-    fontFamily: {
-      sans: ['Inter', 'Inter Fallback', ...defaultTheme.fontFamily.sans],
-      // FIXME: Remove the "mono" font family, if it is not used in the project
-      mono: ['', ...defaultTheme.fontFamily.mono],
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
+      borderRadius: {
+        large: '40px',
+      },
+      letterSpacing: {
+        'tight-8': '-0.02em',
+        'tight-4': '-0.01em',
+      },
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -36,15 +44,7 @@ module.exports = {
         400: '#172136',
       },
     }),
-    extend: {
-      borderRadius: {
-        large: '40px',
-      },
-      letterSpacing: {
-        'tight-8': '-0.02em',
-        'tight-4': '-0.01em',
-      },
-    },
+
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
       xl: { max: '1439px' },
