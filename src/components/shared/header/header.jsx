@@ -27,9 +27,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute left-0 right-0 top-0 z-50 h-[64px] px-safe pt-safe">
+      <header className="absolute left-0 right-0 top-0 z-50 h-20 bg-transparent px-safe pt-safe">
         <nav
-          className="container flex h-full items-center justify-between px-4"
+          className="container flex h-full items-center justify-between py-4"
           aria-label="Global"
         >
           <Link href="/">
