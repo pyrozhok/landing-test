@@ -7,10 +7,10 @@ import Link from 'components/shared/link';
 // Example of the code — https://user-images.githubusercontent.com/20713191/144215307-35538500-b9f0-486d-abed-1a14825bb75c.png
 const styles = {
   base: 'flex items-center rounded-large leading-4 text-base font-semibold px-9 md:px-4 whitespace-nowrap duration-200 transition-colors',
-  // FIXME: Add sizes. Better to write down all sizes and go from higher to lower, e.g. "xl", "lg", "md", "sm", "xs"
-  //       The name of the size cannot be lower than the font size that being used, e.g. "sm" size cannot have font-size "xs"
-  //       Check out an example by a link above for better understanding
-  size: {},
+  size: {
+    md: 'h-12',
+    sm: 'h-11',
+  },
   // FIXME: Add themes. Better to name the theme using this pattern: "${color-name}-${theme-type}", e.g. "black-filled"
   //       If there is no dividing between theme types, then feel free to use just color names, e.g. "black"
   //       Check out an example by a link above for better understanding
