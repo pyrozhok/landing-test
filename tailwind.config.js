@@ -14,8 +14,9 @@ module.exports = {
         large: '40px',
       },
       letterSpacing: {
-        'tight-8': '-0.02em',
-        'tight-4': '-0.01em',
+        'tight-1': '-0.01em',
+        'tight-2': '-0.02em',
+        'tight-3': '-0.03em',
       },
     },
     colors: ({ colors }) => ({

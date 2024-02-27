@@ -7,10 +7,10 @@ import React from 'react';
 // Example of the code — https://user-images.githubusercontent.com/20713191/144221096-1939c382-4ab8-4d28-b0e6-7bbe3a8f8556.png
 const styles = {
   transition: 'transition-colors duration-200',
-  base: 'relative inline-block text-center text-base before:block before:absolute before:inset-0 before:opacity-0 before:hover:opacity-100 before:hover:transition-opacity before:content-[attr(title)]',
+  base: 'relative inline-block text-center text-base before:block before:absolute before:inset-0 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:font-medium before:whitespace-nowrap before:tracking-tight-3 before:content-[attr(title)]',
   size: {
-    md: 'font-base tracking-tight-8 font-normal',
-    sm: 'font-base tracking-tight-8 font-light',
+    md: 'font-base tracking-tight-2 font-normal',
+    sm: 'font-base tracking-tight-2 font-light',
   },
   theme: {
     default: 'opacity-90',
