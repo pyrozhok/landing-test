@@ -24,7 +24,7 @@ const Button = ({ className = null, to = null, size, theme, children, ...otherPr
   return (
     <Tag
       className={clsx(styles.base, styles.size[size], styles.theme[theme], className)}
-      to={to}
+      href={to}
       {...otherProps}
     >
       {children}

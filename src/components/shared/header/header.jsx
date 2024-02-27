@@ -42,11 +42,11 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link href="/">
-            <Button className="flex md:hidden" theme="primary-blue-outline" size="md">
-              Get started
-            </Button>
-          </Link>
+
+          <Button className="flex md:hidden" to="/" theme="primary-blue-outline" size="md">
+            Get started
+          </Button>
+
           <Burger
             className="hidden md:block"
             isToggled={isMobileMenuOpen}
