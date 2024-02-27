@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+/* eslint-disable global-require */
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -8,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         large: '40px',
