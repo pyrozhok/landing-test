@@ -21,10 +21,10 @@ const Hero = () => (
       <div className="relative col-span-1">
         <div className="hero-ellipse-gradient z-10" />
         <Image
-          className="absolute -right-7 -top-56 z-20 bg-transparent"
+          className="absolute -right-7 top-[-275px] z-20 bg-transparent"
           src={heroIllustration}
-          width={656}
-          height={487}
+          width={589}
+          height={415}
           alt="hero"
           priority
         />
