@@ -48,7 +48,7 @@ module.exports = {
       },
     }),
     backgroundImage: {
-      'hero-gradient': "url('/background.svg')",
+      'hero-gradient': "url('/images/hero-background.svg')",
     },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
