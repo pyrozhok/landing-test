@@ -21,7 +21,7 @@ const aeonik = localFont({
 // eslint-disable-next-line react/prop-types
 const RootLayout = ({ children }) => (
   <html lang="en" className={`${inter.variable} ${aeonik.variable}`}>
-    <body>
+    <body className="min-h-screen">
       <Header />
       <main>{children}</main>
       <Footer />
