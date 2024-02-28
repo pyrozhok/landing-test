@@ -8,7 +8,7 @@ const Hero = () => (
   <section className="hero hero-bg bg-hero-gradient py-20">
     <div className="container relative grid grid-cols-2 items-center gap-10 pt-[88px] md:grid-cols-1">
       <div className="col-span-1 pt-12">
-        <div className="hero-round-gradient" />
+        <div className="hero-round-gradient pointer-events-none" />
         <h1 className="hero-title-gradient bg-clip-text pb-7 font-title text-7xl leading-[112.5%]">
           Revolutionize <br /> your DevOps journey with DevOptima
         </h1>
