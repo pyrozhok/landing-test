@@ -9,9 +9,9 @@ const Hero = () => (
     <div className="container relative grid grid-cols-2 items-center gap-10 pt-[88px] md:grid-cols-1">
       <div className="col-span-1 pt-12">
         <div className="hero-round-gradient" />
-        <h2 className="hero-title-gradient bg-clip-text pb-7 font-title text-7xl leading-[112.5%]">
+        <h1 className="hero-title-gradient bg-clip-text pb-7 font-title text-7xl leading-[112.5%]">
           Revolutionize <br /> your DevOps journey with DevOptima
-        </h2>
+        </h1>
         <p className="tracking-tight-8 pb-9 text-xl font-light leading-normal text-grey-200">
           Empower teams to innovate faster through streamlined development, <br className="block" />
           efficient automated workflows, and reliable scaling.
