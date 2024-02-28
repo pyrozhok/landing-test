@@ -22,21 +22,22 @@ const styles = {
   },
 };
 
-const InfoIcon = ({ className, theme, content, animation }) => (
-  <div className={clsx(styles.base, styles.theme[theme], className)}>
-    <Image
-      className={clsx(animation ? styles.animation : '')}
-      src={styles.content[content]}
-      width={48}
-      height={48}
-      alt=""
-    />
+const InfoIcon = ({ className, theme, content, isAnimation }) => (
+  <div
+    className={clsx(
+      styles.base,
+      styles.theme[theme],
+      isAnimation ? styles.animation : '',
+      className
+    )}
+  >
+    <Image src={styles.content[content]} width={48} height={48} alt="" />
   </div>
 );
 
 InfoIcon.propTypes = {
   className: PropTypes.string,
-  animation: PropTypes.bool,
+  isAnimation: PropTypes.bool,
   theme: PropTypes.oneOf(Object.keys(styles.theme)).isRequired,
   content: PropTypes.oneOf(Object.keys(styles.content)).isRequired,
 };

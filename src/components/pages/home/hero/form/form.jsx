@@ -59,7 +59,7 @@ const Form = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="form-border max-w-[464px] overflow-hidden rounded-large p-px">
+      <div className="form-border max-w-[464px] overflow-hidden rounded-[30px] p-px">
         <form
           className="form-bg relative flex before:absolute before:-inset-px"
           noValidate
@@ -78,7 +78,7 @@ const Form = () => {
             />
             <div className="flex min-w-[147px] justify-end overflow-hidden rounded-large py-1.5">
               {loading ? (
-                <Icon className="p-2" theme="primary-blue" content="loading" animation />
+                <Icon className="p-2" theme="primary-blue" content="loading" isAnimation />
               ) : (
                 <Button
                   className={clsx(
