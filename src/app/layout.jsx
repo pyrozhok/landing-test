@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import Footer from 'components/shared/footer';
 import Header from 'components/shared/header';
@@ -11,9 +12,15 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const aeonik = localFont({
+  src: '../assets/fonts/aeonik-regular.woff2',
+  display: 'swap',
+  variable: '--font-aeonik',
+});
+
 // eslint-disable-next-line react/prop-types
 const RootLayout = ({ children }) => (
-  <html lang="en" className={`${inter.variable}`}>
+  <html lang="en" className={`${inter.variable} ${aeonik.variable}`}>
     <body>
       <Header />
       <main>{children}</main>

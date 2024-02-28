@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        title: ['var(--font-aeonik)', ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         large: '40px',
@@ -26,6 +27,7 @@ module.exports = {
       transparent: colors.transparent,
       white: '#FFFFFF',
       black: '#0A0812',
+      red: '#F04242',
       primary: {
         blue: '#243BB9',
         green: '#4DB29A',
@@ -45,7 +47,9 @@ module.exports = {
         400: '#172136',
       },
     }),
-
+    backgroundImage: {
+      'hero-gradient': "url('/background.svg')",
+    },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
       xl: { max: '1439px' },

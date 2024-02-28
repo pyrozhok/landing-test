@@ -1,10 +1,11 @@
+@import './gradients.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply antialiased bg-black text-white;
+    @apply bg-black text-white antialiased;
   }
 }
 

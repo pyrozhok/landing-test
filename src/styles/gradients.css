@@ -1,0 +1,70 @@
+@layer components {
+  .hero-round-gradient {
+    @apply absolute left-[-400px] top-[-400px];
+    @apply h-[800px] w-[800px] md:w-[300px] md:w-[300px];
+    @apply rounded-[800px] blur-[200px];
+    background: rgba(20, 28, 72, 0.6);
+  }
+  .hero-ellipse-gradient {
+    @apply absolute top-[-216px] h-[396px] w-[716px] shrink-0;
+    @apply rounded-[716px] blur-[200px];
+    background: rgba(20, 28, 72, 0.6);
+  }
+  .hero-linear-gradient {
+    @apply absolute h-9 w-9;
+    @apply rounded-[9px];
+    box-shadow: 0px 0px 30px -8px rgb(36, 59, 185);
+    background: linear-gradient(180deg, rgba(40, 74, 144, 0.35), rgba(40, 74, 144, 0.14) 100%);
+  }
+  .hero-linear-gradient-reviews {
+    @apply absolute h-16 w-16;
+    @apply rounded-2xl;
+    box-shadow: 0px 0px 50px -15px rgb(36, 59, 185);
+    background: linear-gradient(180deg, rgba(40, 74, 144, 0.35), rgba(40, 74, 144, 0.14) 100%);
+  }
+  .hero-ellipse-gradient-solutions {
+    @apply absolute top-[346px] h-[396px] w-[1220px];
+    @apply blur-[300px];
+    background: rgba(20, 28, 72, 0.6);
+  }
+  .hero-bg {
+    @apply bg-[length:1799px_760px] bg-right-top bg-no-repeat;
+  }
+  .hero-title-gradient {
+    background: linear-gradient(102deg, rgba(109, 156, 246, 0.7) -11.46%, #fff 46.19%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-h3 {
+    background: linear-gradient(
+      90deg,
+      rgba(109, 156, 246, 0.7),
+      rgba(195, 214, 251, 0.88),
+      rgb(255, 255, 255),
+      rgba(208, 223, 252, 0.9),
+      rgba(109, 156, 246, 0.7)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .form-border {
+    background: linear-gradient(
+      90deg,
+      rgba(27, 36, 79, 1),
+      rgba(39, 56, 113, 1),
+      rgba(44, 66, 127, 1)
+    );
+  }
+  .form-bg {
+    background: linear-gradient(269deg, rgba(24, 38, 74, 0.8) 22.75%, rgba(15, 22, 49, 0.8) 93.35%);
+  }
+  .form-text {
+    opacity: 0.8;
+    background: linear-gradient(90deg, #c8d6f2 0%, #adc2ec 32.41%, #9eb7e8 71.97%, #97b1e6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
