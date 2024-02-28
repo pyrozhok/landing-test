@@ -8,7 +8,7 @@ import Cross from 'svgs/cross.svg';
 import Loader from 'svgs/loader.svg';
 
 const styles = {
-  base: 'flex items-center justify-center w-12 h-12 leading-none text-center whitespace-nowrap rounded-large select-none',
+  base: 'flex items-center justify-center w-12 h-12 rounded-large select-none',
   theme: {
     'primary-green': 'bg-primary-green',
     'primary-pink': 'bg-primary-pink',
