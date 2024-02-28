@@ -58,15 +58,15 @@ const Form = () => {
   };
 
   return (
-    <div className="flex h-24 flex-col">
-      <div className="form-border max-h-14 max-w-[466px] overflow-hidden rounded-large p-px">
+    <div className="flex flex-col">
+      <div className="form-border max-w-[466px] overflow-hidden rounded-large p-px">
         <form
-          className="form-bg flex max-h-[54px] items-center justify-between overflow-hidden rounded-large"
+          className="form-bg flex items-center justify-between overflow-hidden rounded-large"
           noValidate
           onSubmit={handleSubmit}
         >
           <Input
-            className="form-text tracking-tight-4 flex flex-1 bg-transparent py-[18px] pl-[23px] text-[15px] font-light leading-5"
+            className="form-text tracking-tight-4 flex h-14 flex-1 bg-transparent py-[18px] pl-[23px] text-[15px] font-light leading-5"
             placeholder="Your business email..."
             name="email"
             type="email"
@@ -77,7 +77,7 @@ const Form = () => {
           />
           <div className="flex min-w-[147px] justify-end overflow-hidden rounded-large py-1.5 pe-1">
             {loading ? (
-              <Icon theme="primary-blue" content="loading" className="p-2" animation />
+              <Icon className="p-2" theme="primary-blue" content="loading" animation />
             ) : (
               <Button
                 className={clsx(
