@@ -13,7 +13,7 @@ const styles = {
   },
   theme: {
     'primary-blue-outline':
-      'bg-primary-blue/20 border border-primary-blue tracking-tight-8 hover:bg-primary-blue/50',
+      'bg-primary-blue/20 border border-primary-blue tracking-tight-2 hover:bg-primary-blue/50',
     'primary-blue-filled': 'bg-primary-blue border border-transparent hover:bg-secondary-blue',
   },
 };

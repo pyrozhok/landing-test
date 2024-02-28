@@ -12,7 +12,7 @@ const Hero = () => (
         <h1 className="hero-title-gradient bg-clip-text pb-7 font-title text-7xl leading-[112.5%]">
           Revolutionize <br /> your DevOps journey with DevOptima
         </h1>
-        <p className="tracking-tight-8 pb-9 text-xl font-light leading-normal text-grey-200">
+        <p className="pb-9 text-xl font-light leading-normal tracking-tight-2 text-grey-200">
           Empower teams to innovate faster through streamlined development, <br className="block" />
           efficient automated workflows, and reliable scaling.
         </p>
@@ -21,7 +21,7 @@ const Hero = () => (
       <div className="relative col-span-1">
         <div className="hero-ellipse-gradient z-10" />
         <Image
-          className="absolute -right-7 -top-72 z-20 bg-transparent"
+          className="absolute -top-72 left-[5.5rem] z-20 bg-transparent"
           src={heroIllustration}
           width={589}
           height={415}
