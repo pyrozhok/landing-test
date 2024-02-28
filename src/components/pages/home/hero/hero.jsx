@@ -5,9 +5,9 @@ import heroIllustration from 'components/pages/home/hero/images/hero-illustratio
 import Form from './form';
 
 const Hero = () => (
-  <section className="hero hero-bg bg-hero-gradient py-20">
-    <div className="container relative grid grid-cols-2 items-center gap-10 pt-[88px] md:grid-cols-1">
-      <div className="col-span-1 pt-12">
+  <section className="hero hero-bg bg-hero-gradient pt-[216px]">
+    <div className="container relative grid grid-cols-2 items-center gap-10 md:grid-cols-1">
+      <div className="col-span-1">
         <div className="hero-round-gradient pointer-events-none" />
         <h1 className="hero-title-gradient bg-clip-text pb-7 font-title text-7xl leading-[112.5%]">
           Revolutionize <br /> your DevOps journey with DevOptima
@@ -21,7 +21,7 @@ const Hero = () => (
       <div className="relative col-span-1">
         <div className="hero-ellipse-gradient z-10" />
         <Image
-          className="absolute -right-7 top-[-275px] z-20 bg-transparent"
+          className="absolute -right-7 -top-72 z-20 bg-transparent"
           src={heroIllustration}
           width={589}
           height={415}
