@@ -59,39 +59,41 @@ const Form = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="form-border max-w-[466px] overflow-hidden rounded-large p-px">
+      <div className="form-border max-w-[464px] overflow-hidden rounded-large p-px">
         <form
-          className="form-bg flex items-center justify-between overflow-hidden rounded-large"
+          className="form-bg relative flex before:absolute before:-inset-px"
           noValidate
           onSubmit={handleSubmit}
         >
-          <Input
-            className="form-text tracking-tight-4 flex h-14 flex-1 bg-transparent py-[18px] pl-[23px] text-[15px] font-light leading-5"
-            placeholder="Your business email..."
-            name="email"
-            type="email"
-            autoComplete="email"
-            value={email}
-            disabled={loading}
-            onChange={handleInputChange}
-          />
-          <div className="flex min-w-[147px] justify-end overflow-hidden rounded-large py-1.5 pe-1">
-            {loading ? (
-              <Icon className="p-2" theme="primary-blue" content="loading" animation />
-            ) : (
-              <Button
-                className={clsx(
-                  !loading && !formSuccess && !formFailed ? 'block w-full' : 'hidden'
-                )}
-                theme="primary-blue-filled"
-                size="sm"
-                type="submit"
-              >
-                Free trial
-              </Button>
-            )}
-            {formFailed && <Icon theme="primary-pink" content="cross" />}
-            {formSuccess && <Icon theme="primary-green" content="check" />}
+          <div className="relative z-20 flex h-[56px] w-full items-center overflow-hidden pl-2 pr-[0.3rem]">
+            <Input
+              className="py-4.5 text-16 w-full flex-grow border-none bg-transparent px-6 font-light leading-tight tracking-wider outline-none placeholder:opacity-80"
+              placeholder="Your business email..."
+              name="email"
+              type="email"
+              autoComplete="email"
+              value={email}
+              disabled={loading}
+              onChange={handleInputChange}
+            />
+            <div className="flex min-w-[147px] justify-end overflow-hidden rounded-large py-1.5">
+              {loading ? (
+                <Icon className="p-2" theme="primary-blue" content="loading" animation />
+              ) : (
+                <Button
+                  className={clsx(
+                    !loading && !formSuccess && !formFailed ? 'block w-full' : 'hidden'
+                  )}
+                  theme="primary-blue-filled"
+                  size="sm"
+                  type="submit"
+                >
+                  Free trial
+                </Button>
+              )}
+              {formFailed && <Icon theme="primary-pink" content="cross" />}
+              {formSuccess && <Icon theme="primary-green" content="check" />}
+            </div>
           </div>
         </form>
       </div>
