@@ -58,7 +58,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex h-24 flex-col">
       <div className="form-border max-w-[464px] overflow-hidden rounded-[30px] p-px">
         <form
           className="form-bg relative flex before:absolute before:-inset-px"
