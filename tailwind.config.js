@@ -54,7 +54,7 @@ module.exports = {
         'linear-gradient(102deg, rgba(109, 156, 246, 0.7) -11.46%, #fff 46.19%)',
       'blue-linear-gradient':
         'linear-gradient(90deg, rgba(109, 156, 246, 0.7), rgba(195, 214, 251, 0.88), rgb(255, 255, 255), rgba(208, 223, 252, 0.9), rgba(109, 156, 246, 0.7))',
-      'form-boder':
+      'form-border':
         'linear-gradient(90deg, rgba(27, 36, 79, 1), rgba(39, 56, 113, 1), rgba(44, 66, 127, 1))',
       'form-background':
         'linear-gradient(269deg, rgba(24, 38, 74, 0.8) 22.75%, rgba(15, 22, 49, 0.8) 93.35%)',

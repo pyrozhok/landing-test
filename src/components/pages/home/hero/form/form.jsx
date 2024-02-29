@@ -59,7 +59,7 @@ const Form = () => {
 
   return (
     <div className="flex h-24 flex-col">
-      <div className="max-w-[464px] overflow-hidden rounded-[30px] bg-form-boder p-px">
+      <div className="max-w-[464px] overflow-hidden rounded-[30px] bg-form-border p-px">
         <form
           className="relative flex bg-form-background before:absolute before:-inset-px"
           noValidate
