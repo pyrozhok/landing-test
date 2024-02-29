@@ -1,11 +1,13 @@
 import AboutUs from 'components/pages/home/about-us';
 import Hero from 'components/pages/home/hero';
+import Solutions from 'components/pages/home/solutions';
 import getMetadata from 'utils/get-metadata';
 
 const Home = () => (
   <>
     <Hero />
     <AboutUs />
+    <Solutions />
   </>
 );
 

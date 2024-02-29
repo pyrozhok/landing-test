@@ -60,6 +60,8 @@ module.exports = {
         'linear-gradient(269deg, rgba(24, 38, 74, 0.8) 22.75%, rgba(15, 22, 49, 0.8) 93.35%)',
       'card-linear-gradient':
         'linear-gradient(180deg, rgba(40, 74, 144, 0.35), rgba(40, 74, 144, 0.14) 100%)',
+      'card-linear-gradient-2':
+        'linear-gradient(180.00deg, rgba(33, 66, 136, 0.25),rgba(8, 20, 43, 0.25) 100%)',
       ...defaultTheme.backgroundImage,
     },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
@@ -73,6 +75,7 @@ module.exports = {
     },
     boxShadow: {
       about: '0px 0px 30px -8px rgb(36, 59, 185)',
+      solutions: '0px 10px 40px 0px rgba(0, 0, 0, 0.3)',
       reviews: '0px 0px 50px -15px rgb(36, 59, 185)',
     },
   },
