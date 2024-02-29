@@ -45,10 +45,20 @@ module.exports = {
         100: '#3D79F5',
         200: '#0054FF',
         400: '#172136',
+        450: '#141c4899',
       },
     }),
     backgroundImage: {
       'hero-gradient': "url('/images/hero-background.svg')",
+      'hero-title-gradient':
+        'linear-gradient(102deg, rgba(109, 156, 246, 0.7) -11.46%, #fff 46.19%)',
+      'blue-linear-gradient':
+        'linear-gradient(90deg, rgba(109, 156, 246, 0.7), rgba(195, 214, 251, 0.88), rgb(255, 255, 255), rgba(208, 223, 252, 0.9), rgba(109, 156, 246, 0.7))',
+      'form-boder':
+        'linear-gradient(90deg, rgba(27, 36, 79, 1), rgba(39, 56, 113, 1), rgba(44, 66, 127, 1))',
+      'form-background':
+        'linear-gradient(269deg, rgba(24, 38, 74, 0.8) 22.75%, rgba(15, 22, 49, 0.8) 93.35%)',
+      ...defaultTheme.backgroundImage,
     },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
@@ -58,6 +68,10 @@ module.exports = {
       sm: { max: '767px' },
       xs: { max: '639px' },
       '2xs': { max: '413px' },
+    },
+    boxShadow: {
+      about: '0px 0px 30px -8px rgb(36, 59, 185)',
+      reviews: '0px 0px 50px -15px rgb(36, 59, 185)',
     },
   },
   plugins: [require('tailwindcss-safe-area')],
