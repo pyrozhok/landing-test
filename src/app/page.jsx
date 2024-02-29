@@ -1,7 +1,13 @@
+import AboutUs from 'components/pages/home/about-us';
 import Hero from 'components/pages/home/hero';
 import getMetadata from 'utils/get-metadata';
 
-const Home = () => <Hero />;
+const Home = () => (
+  <>
+    <Hero />
+    <AboutUs />
+  </>
+);
 
 export default Home;
 

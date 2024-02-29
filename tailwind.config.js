@@ -58,6 +58,8 @@ module.exports = {
         'linear-gradient(90deg, rgba(27, 36, 79, 1), rgba(39, 56, 113, 1), rgba(44, 66, 127, 1))',
       'form-background':
         'linear-gradient(269deg, rgba(24, 38, 74, 0.8) 22.75%, rgba(15, 22, 49, 0.8) 93.35%)',
+      'card-linear-gradient':
+        'linear-gradient(180deg, rgba(40, 74, 144, 0.35), rgba(40, 74, 144, 0.14) 100%)',
       ...defaultTheme.backgroundImage,
     },
     // FIXME: Check if the breakpoints ("screens") are correct for the project
