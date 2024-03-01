@@ -25,7 +25,7 @@ const Card = ({ className = null, icon, title, description }) => (
       <div className="absolute h-9 w-9 rounded-[9.25px] bg-card-linear-gradient shadow-about" />
       <Image width={22} height={22} src={iconMap[icon]} alt={icon} />
     </div>
-    <h3 className="pt-[14px] text-xl font-medium text-white">{title}</h3>
+    <h3 className="pt-2 text-xl font-medium text-white">{title}</h3>
     <p className="pt-2 text-base font-light leading-5 text-grey-200">{description}</p>
   </li>
 );

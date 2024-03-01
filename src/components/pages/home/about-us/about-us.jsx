@@ -6,7 +6,7 @@ import Card from './card';
 import { BENEFITS } from './data/benefits';
 
 export const AboutUs = () => (
-  <section className="about-us pt-[168px]">
+  <section className="pt-[168px]">
     <div className="container relative grid grid-cols-2 items-center lg:flex">
       <div className="lg:hidden">
         <div className="absolute -top-28 left-[350px] z-10 h-[300px] w-[300px] rounded-[716px] bg-blue-450 blur-[100px] " />
@@ -18,8 +18,8 @@ export const AboutUs = () => (
           alt="hero"
         />
       </div>
-      <div className="pt-13">
-        <h2 className="pb-5 pt-[3.375rem] font-title text-5xl leading-[112.5%] text-white">
+      <div>
+        <h2 className="pb-5 pt-12 font-title text-5xl leading-[112.5%] text-white">
           What is DevOptima?
         </h2>
         <p className="w-[630px] text-xl font-light leading-normal tracking-tight-2 text-grey-200 lg:w-full lg:text-center">
