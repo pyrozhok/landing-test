@@ -20,14 +20,14 @@ const iconMap = {
 };
 
 const Card = ({ className = null, icon, title, description }) => (
-  <div className={clsx(styles.base, className)}>
+  <li className={clsx(styles.base, className)}>
     <div className="relative flex h-9 w-9 items-center justify-center rounded-[9px] border-[1.3px] border-blue-400">
       <div className="absolute h-9 w-9 rounded-[9.25px] bg-card-linear-gradient shadow-about" />
       <Image width={22} height={22} src={iconMap[icon]} alt={icon} />
     </div>
     <h3 className="pt-[14px] text-xl font-medium text-white">{title}</h3>
     <p className="pt-2 text-base font-light leading-5 text-grey-200">{description}</p>
-  </div>
+  </li>
 );
 
 Card.propTypes = {

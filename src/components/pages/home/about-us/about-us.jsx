@@ -26,7 +26,7 @@ export const AboutUs = () => (
           At DevOptima, we are a team of passionate DevOps experts committed to transforming the way
           businesses approach software development and operations.
         </p>
-        <div className="relative flex flex-wrap gap-x-[107px] gap-y-10 pt-14">
+        <ul className="relative flex flex-wrap gap-x-[107px] gap-y-10 pt-14">
           {BENEFITS.length > 0 &&
             BENEFITS.map((item, index) => (
               <Card
@@ -36,7 +36,7 @@ export const AboutUs = () => (
                 description={item.description}
               />
             ))}
-        </div>
+        </ul>
       </div>
     </div>
   </section>
