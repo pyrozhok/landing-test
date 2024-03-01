@@ -8,16 +8,16 @@ const styles = {
 };
 
 const Card = ({ className = null, icon, title, description }) => (
-  <div className={clsx(styles.base, className)}>
-    <div className="relative h-[277px] w-[380px] rounded-2xl">
-      <Image src={icon} alt="solution image" fill />
+  <li className={clsx(styles.base, className)}>
+    <div className="relative rounded-2xl">
+      <Image src={icon} alt="solution image" width={380} height={277} />
     </div>
 
     <div className="flex flex-col px-8">
-      <h3 className="text-xl font-medium tracking-tight-2 text-white">{title}</h3>
-      <p className="pt-[12px] text-base font-light leading-[137.5%] text-grey-200">{description}</p>
+      <h3 className="text-xl font-medium leading-tight tracking-tight-2 text-white">{title}</h3>
+      <p className="pt-[12px] text-base font-light leading-snug text-grey-200">{description}</p>
     </div>
-  </div>
+  </li>
 );
 
 Card.propTypes = {

@@ -18,8 +18,9 @@ const Solutions = () => (
           Personalized solutions for growth and evolution.
         </p>
       </div>
-      <div className="flex flex-wrap gap-10">
-        <div className="pointer-events-none absolute top-[346px] -z-20 h-[396px] w-[1220px] bg-blue-450 blur-[300px]" />
+
+      <div className="pointer-events-none absolute top-[300px] -z-20 h-[396px] w-[1220px] bg-blue-450 blur-[300px]" />
+      <ul className="flex flex-wrap gap-10">
         <Card
           icon={deployIllustration}
           title="Continuous Integration & Deployment"
@@ -35,7 +36,7 @@ const Solutions = () => (
           title="Cloud Solutions & Infrastructure Management"
           description="Leverage the cloud for scalability and efficiency. We provide comprehensive cloud infrastructure management and optimization services."
         />
-      </div>
+      </ul>
     </div>
   </section>
 );
