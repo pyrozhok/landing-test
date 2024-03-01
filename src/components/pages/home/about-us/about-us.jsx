@@ -6,12 +6,12 @@ import Card from './card';
 import { BENEFITS } from './data/benefits';
 
 export const AboutUs = () => (
-  <section className="about-us pt-48">
-    <div className="container relative grid grid-cols-2 items-center gap-20 md:grid-cols-1">
+  <section className="about-us pt-[168px]">
+    <div className="container relative grid grid-cols-2 items-center md:grid-cols-1">
       <div className="col-span-1 ">
         <div className="absolute -top-24 left-[477px] z-10 h-[300px] w-[300px] rounded-[716px] bg-blue-450 blur-[100px]" />
         <Image
-          className="absolute -left-40 top-0 z-20 h-[619px] bg-transparent"
+          className="absolute -left-[246px] top-0 z-20 h-[619px] bg-transparent"
           src={usageIllustration}
           width={854}
           height={619}
