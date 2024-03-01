@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const styles = {
-  base: `flex flex-col w-[380px] h-[459px] box-border rounded-lg border-[1px] border-blue-400 bg-card-linear-gradient-2 shadow-solutions`,
+  base: `flex flex-col w-[380px] pb-8 box-border rounded-lg border-[1px] border-blue-400 bg-card-linear-gradient-2 shadow-solutions`,
 };
 
 const Card = ({ className = null, icon, title, description }) => (
