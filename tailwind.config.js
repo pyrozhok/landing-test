@@ -50,6 +50,7 @@ module.exports = {
     }),
     backgroundImage: {
       'hero-gradient': "url('/images/hero-background.svg')",
+      'reviews-gradient': "url('/images/reviews-background.svg')",
       'hero-title-gradient':
         'linear-gradient(102deg, rgba(109, 156, 246, 0.7) -11.46%, #fff 46.19%)',
       'blue-linear-gradient':
