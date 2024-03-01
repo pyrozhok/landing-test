@@ -9,7 +9,7 @@ const styles = {
 
 const Card = ({ className = null, icon, title, description }) => (
   <li className={clsx(styles.base, className)}>
-    <div className="relative rounded-2xl">
+    <div className="rounded-2xl">
       <Image src={icon} alt="solution image" width={380} height={277} />
     </div>
 
